@@ -1,0 +1,11 @@
+<h1>Personaje:</h1>
+<%= @character.name %>
+<%= @character.actor %>
+<%= @character.review %>
+<img src="<%= @character.image_url %>" alt="">
+
+
+<%= link_to "Delete",
+  character_path(@rcharacter),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

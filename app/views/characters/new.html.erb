@@ -1,0 +1,10 @@
+<%= form_with model: @character do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :review %>
+  <%= f.text_field :review %>
+  <%= f.label :actor %>
+  <%= f.text_field :actor %>
+  <%# <%= f. :image_url %>
+  <%= f.submit %>
+<% end %>
