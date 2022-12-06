@@ -14,7 +14,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.new(params[:character])
+    @character = Character.new(character_params)
     @character.save
     redirect_to character_path(@character)
   end
@@ -25,7 +25,7 @@ class CharactersController < ApplicationController
 
   def update
     @character = Character.find(params[:id])
-    @character.update(params[:character])
+    @character.update(character_params)
     redirect_to character_path(@character)
   end
 
