@@ -35,6 +35,15 @@ class CharactersController < ApplicationController
     redirect_to character_path, status: :see_other
   end
 
+  def ruta1
+  end
+
+  def ruta2
+  end
+
+  def ruta3
+  end
+
   private
 
   def character_params
